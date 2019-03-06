@@ -25,7 +25,7 @@ RSYNC_OPTS="rsync -avz -e ssh"
 # tuples of directories to sync (remote local)
 DIRS=( 
     "/home/pi/RetroPie/roms/ ./roms/" 
-    "/home/pi/.emulationstation/downloadedimages/ ./downloadedimages/" 
+    "/home/pi/.emulationstation/downloaded_images/ ./downloaded_images/" 
     "/home/pi/.emulationstation/gamelists/ ./gamelists/" 
 )
 
