@@ -16,18 +16,17 @@ echo_green () {
 REMOTE_USER=pi
 REMOTE_IP=192.168.1.151
 
-# TODO - exclude swp files (other types?)
-# TODO - optional --delete in rsync?
-
 # rsync command to use
 RSYNC_OPTS="rsync -avz -e ssh"
 
+# NOTE: ln -s /home/pi/roms/ti99/TI-994A.ctg /home/pi/RetroPie/BIOS/TI-994A.ctg
 # tuples of directories to sync (remote local)
 DIRS=( 
     "/home/pi/RetroPie/roms/ ./roms/" 
     "/home/pi/.emulationstation/downloaded_images/ ./downloaded_images/" 
     "/home/pi/.emulationstation/gamelists/ ./gamelists/" 
 )
+
 
 # stop emulation station if uploading files
 if [ "$MODE" == "up" ]; then
