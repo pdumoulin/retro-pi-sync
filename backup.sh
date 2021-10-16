@@ -14,7 +14,7 @@ echo_green () {
 
 # remote retropi locations
 REMOTE_USER=pi
-REMOTE_IP=192.168.1.151
+REMOTE_IP=192.168.50.151
 
 # rsync command to use
 RSYNC_OPTS="rsync -avz -e ssh"
