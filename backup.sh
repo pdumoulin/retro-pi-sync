@@ -20,11 +20,12 @@ REMOTE_IP=192.168.50.151
 RSYNC_OPTS="rsync -avz -e ssh"
 
 # tuples of directories to sync (remote local)
-DIRS=( 
-    "/home/pi/RetroPie/BIOS/ ./bios/"
-    "/home/pi/RetroPie/roms/ ./roms/" 
-    "/home/pi/.emulationstation/downloaded_images/ ./downloaded_images/" 
-    "/home/pi/.emulationstation/gamelists/ ./gamelists/" 
+DIRS=(
+    "/home/pi/RetroPie/BIOS/ ./data/bios/"
+    "/home/pi/RetroPie/roms/ ./data/roms/"
+    "/home/pi/.emulationstation/downloaded_images/ ./data/downloaded_images/"
+    "/home/pi/.emulationstation/downloaded_media/ ./data/downloaded_media/"
+    "/home/pi/.emulationstation/gamelists/ ./data/gamelists/"
 )
 
 
